@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "commit": "git add . ; git commit -m 'ready'",
-    "push": "npm run commit ; git push origin dev",
-    "pull": "git pull origin dev",
+    "push": "npm run commit ; git push origin HEAD",
+    "pull": "git pull origin HEAD",
     "everything": "npm run push ; npm version patch ; npm publish ; npm run push"
   },
   "author": "",
@@ -16,6 +16,6 @@
     "axios": "^0.18.0",
     "fs": "0.0.1-security",
     "path": "^0.12.7",
-    "smarts": "^1.0.76"
+    "smarts": "^1.0.161"
   }
 }
